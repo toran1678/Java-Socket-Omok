@@ -1,0 +1,26 @@
+# 설정 파일 예시
+# 이 파일을 복사하여 config.properties로 이름을 변경하고 실제 값으로 수정하세요
+
+# 날씨 API 설정
+# 기상청 공공데이터포털 API 키
+# 신청 링크: https://data.go.kr/tcs/dss/selectApiDataDetailView.do?publicDataPk=15084084
+weather.api.url=https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getUltraSrtFcst
+weather.api.key=YOUR_WEATHER_API_KEY_HERE
+
+# 데이터베이스 설정
+db.url=jdbc:mysql://localhost:3307/Omok?useUnicode=true&characterEncoding=UTF-8
+db.user=root
+db.password=YOUR_DB_PASSWORD_HERE
+
+# 서버 설정
+server.port=7777
+
+# 이메일 설정 (SMTP)
+email.smtp.host=smtp.gmail.com
+email.smtp.port=587
+email.sender.address=YOUR_EMAIL_HERE
+email.sender.password=YOUR_APP_PASSWORD_HERE
+
+# 우편번호 API 설정
+postal.api.key=YOUR_POSTAL_API_KEY_HERE
+postal.api.url=http://openapi.epost.go.kr/postal/retrieveNewAdressAreaCdSearchAllService/retrieveNewAdressAreaCdSearchAllService/getNewAddressListAreaCdSearchAll
